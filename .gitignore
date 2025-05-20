@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*.swn
+*.swo
+*.pyc
+.DS_Store
+*.code-workspace
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+
+# Dataset (if you have one)
+dataset/
+data/
+models/  # if you have trained models
+*.h5
+*.hdf5
+*.pth
+*.pt
+*.pkl
+*.joblib
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# Local development
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+
+# OS generated files
+.DS_Store
+.DS_Store?._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

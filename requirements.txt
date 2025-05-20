@@ -1,0 +1,16 @@
+torch
+torchvision
+tqdm
+matplotlib==3.7.1
+pandas
+numpy
+scikit-learn==1.2.2
+Pillow
+seaborn==0.12.2
+jupyter
+wandb==0.15.3
+timm
+opencv-python
+albumentations
+PyQt5
+pyqt5-tools

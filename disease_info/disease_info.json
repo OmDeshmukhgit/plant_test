@@ -1,0 +1,94 @@
+{
+    "Apple___Apple_scab": {
+        "symptoms": "Circular, olive-green to black spots on leaves, fruit, and twigs. Lesions develop a velvety appearance and can cause premature leaf drop.",
+        "treatment": "Apply fungicides containing myclobutanil or sulfur during early stages of infection. Prune infected branches and remove fallen plant debris.",
+        "prevention": "Plant resistant apple varieties like Liberty or Freedom. Maintain proper tree spacing, ensure good air circulation, and practice annual sanitation by removing fallen leaves and fruit.",
+        "scientific_sources": ["Cornell University Plant Pathology", "USDA Agricultural Research Service"]
+    },
+    "Apple___Black_rot": {
+        "symptoms": "Brown, circular spots on leaves that expand and develop concentric rings. Fruit develops black, sunken lesions.",
+        "treatment": "Apply fungicides containing captan or mancozeb. Prune infected branches and remove mummified fruit.",
+        "prevention": "Practice good sanitation, remove infected plant material, and maintain proper tree spacing.",
+        "scientific_sources": ["Cornell University Plant Pathology", "USDA Agricultural Research Service"]
+    },
+    "Apple___Cedar_apple_rust": {
+        "symptoms": "Yellow-orange spots on leaves that develop into raised, rust-colored pustules on the underside.",
+        "treatment": "Apply fungicides containing myclobutanil or propiconazole. Remove nearby cedar trees if possible.",
+        "prevention": "Plant resistant varieties and maintain good air circulation around trees."
+    },
+    "Corn_(maize)___Cercospora_leaf_spot": {
+        "symptoms": "Small, circular to elliptical spots with tan centers and dark borders on leaves.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb when symptoms first appear.",
+        "prevention": "Practice crop rotation, remove crop debris, and maintain proper plant spacing."
+    },
+    "Corn_(maize)___Common_rust": {
+        "symptoms": "Small, circular to elongated pustules that are reddish-brown in color on both leaf surfaces.",
+        "treatment": "Apply fungicides containing azoxystrobin or propiconazole when symptoms first appear.",
+        "prevention": "Plant resistant varieties and maintain proper plant spacing for good air circulation."
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "symptoms": "Long, elliptical, gray-green lesions that turn tan with age. Lesions may have dark borders.",
+        "treatment": "Apply fungicides containing azoxystrobin or propiconazole when symptoms first appear.",
+        "prevention": "Plant resistant varieties, practice crop rotation, and remove crop debris after harvest."
+    },
+    "Grape___Black_rot": {
+        "symptoms": "Circular, reddish-brown spots on leaves that develop black fruiting bodies. Berries shrivel and turn black.",
+        "treatment": "Apply fungicides containing mancozeb or myclobutanil. Remove and destroy infected plant material.",
+        "prevention": "Plant resistant varieties, maintain good air circulation, and remove fallen leaves and fruit."
+    },
+    "Grape___Esca": {
+        "symptoms": "Yellowing and scorching of leaves, dark streaks in wood, and berry shriveling.",
+        "treatment": "No effective chemical treatment. Remove and destroy infected vines. Make clean pruning cuts.",
+        "prevention": "Plant certified disease-free stock, practice proper pruning techniques, and maintain vine health."
+    },
+    "Grape___Leaf_blight": {
+        "symptoms": "Small, circular spots on leaves that expand and develop dark centers with yellow halos.",
+        "treatment": "Apply fungicides containing mancozeb or copper when symptoms first appear.",
+        "prevention": "Maintain good air circulation, remove infected leaves, and practice proper vine spacing."
+    },
+    "Potato___Early_blight": {
+        "symptoms": "Dark brown spots with concentric rings on leaves, stems, and tubers.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove infected plant material.",
+        "prevention": "Plant certified seed potatoes, practice crop rotation, and maintain proper plant spacing."
+    },
+    "Potato___Late_blight": {
+        "symptoms": "Dark, water-soaked lesions on leaves that expand rapidly. White fungal growth may appear.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove and destroy infected plants.",
+        "prevention": "Plant certified seed potatoes, practice crop rotation, and avoid overhead irrigation."
+    },
+    "Tomato___Bacterial_spot": {
+        "symptoms": "Small, dark, water-soaked spots on leaves, stems, and fruit that may develop yellow halos.",
+        "treatment": "Apply copper-based bactericides. Remove and destroy infected plant material.",
+        "prevention": "Plant disease-free seed, practice crop rotation, and avoid overhead irrigation."
+    },
+    "Tomato___Early_blight": {
+        "symptoms": "Dark brown spots with concentric rings on leaves, stems, and fruit.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove infected leaves.",
+        "prevention": "Plant resistant varieties, practice crop rotation, and maintain proper plant spacing."
+    },
+    "Tomato___Late_blight": {
+        "symptoms": "Dark, water-soaked lesions on leaves and stems. White fungal growth may appear.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove and destroy infected plants.",
+        "prevention": "Plant resistant varieties, practice crop rotation, and avoid overhead irrigation."
+    },
+    "Tomato___Leaf_Mold": {
+        "symptoms": "Yellow spots on upper leaf surfaces with grayish-purple mold on the underside.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove infected leaves.",
+        "prevention": "Maintain good air circulation, avoid overhead irrigation, and practice proper plant spacing."
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "symptoms": "Small, circular spots with dark borders and light centers on leaves.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove infected leaves.",
+        "prevention": "Practice crop rotation, remove crop debris, and maintain proper plant spacing."
+    },
+    "Tomato___Spider_mites": {
+        "symptoms": "Fine webbing on leaves, yellow stippling, and leaf drop.",
+        "treatment": "Apply miticides or insecticidal soap. Remove heavily infested leaves.",
+        "prevention": "Maintain proper humidity, remove weeds, and monitor plants regularly."
+    },
+    "Tomato___Target_Spot": {
+        "symptoms": "Circular spots with concentric rings and yellow halos on leaves and fruit.",
+        "treatment": "Apply fungicides containing chlorothalonil or mancozeb. Remove infected leaves.",
+        "prevention": "Practice crop rotation, remove crop debris, and maintain proper plant spacing."
+    }
+} 

@@ -1,0 +1,38 @@
+{
+  "os": "Windows-10-10.0.26100-SP0",
+  "python": "CPython 3.11.3",
+  "startedAt": "2025-04-30T07:01:29.447198Z",
+  "program": "D:\\VS Codes\\Python\\Mega Project\\Plant_Leaf_Disease_Detection\\train.py",
+  "codePath": "train.py",
+  "email": "omdeshmukh2903@gmail.com",
+  "root": "D:\\VS Codes\\Python\\Mega Project\\Plant_Leaf_Disease_Detection",
+  "host": "LAPTOP-KTGGNAF6",
+  "executable": "D:\\VS Codes\\Python\\Mega Project\\Plant_Leaf_Disease_Detection\\venv\\Scripts\\python.exe",
+  "codePathLocal": "train.py",
+  "cpu_count": 4,
+  "cpu_count_logical": 8,
+  "gpu": "NVIDIA GeForce MX330",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "157285347328",
+      "used": "108411088896"
+    }
+  },
+  "memory": {
+    "total": "8415662080"
+  },
+  "cpu": {
+    "count": 4,
+    "countLogical": 8
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce MX330",
+      "memoryTotal": "2147483648",
+      "cudaCores": 384,
+      "architecture": "Pascal"
+    }
+  ],
+  "cudaVersion": "12.8"
+}
