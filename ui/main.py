@@ -99,8 +99,8 @@ class PlantDiseaseDetectorApp(QMainWindow):
         
         # Language Selection
         language_layout = QHBoxLayout()
-        language_label = QLabel("Language:")
-        language_label.setStyleSheet("color: #4CAF50; font-weight: bold; font-size: 20px; margin-left: 20px;")
+        language_label = QLabel("Language ( भाषा निवडा ) :")
+        language_label.setStyleSheet("color:rgb(0, 0, 0); font-weight: 600; font-size: 24px; margin-left: 0px;")
         self.language_dropdown = QComboBox()
         self.language_dropdown.addItems(["English", "Hindi", "Marathi"])
         self.language_dropdown.setStyleSheet("""
@@ -112,6 +112,8 @@ class PlantDiseaseDetectorApp(QMainWindow):
                 padding: 5px;
                 min-width: 150px;
                 font-size: 14px;
+                font-weight:bold;
+                                             
             }
             QComboBox::drop-down {
                 subcontrol-origin: padding;
@@ -122,6 +124,12 @@ class PlantDiseaseDetectorApp(QMainWindow):
                 border-left-style: solid;
                 border-top-right-radius: 5px;
                 border-bottom-right-radius: 5px;
+            }
+            QComboBox::down-arrow {
+                image: url(arrow_icon.png);
+                color: red;
+                width: 14px;
+                height: 14px;
             }
         """)
         language_layout.addWidget(language_label)
