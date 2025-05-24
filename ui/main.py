@@ -112,24 +112,21 @@ class PlantDiseaseDetectorApp(QMainWindow):
                 padding: 5px;
                 min-width: 150px;
                 font-size: 14px;
-                font-weight:bold;
-                                             
+                font-weight: bold;
+                padding-right: 30px;  /* Make room for the arrow */
             }
             QComboBox::drop-down {
                 subcontrol-origin: padding;
                 subcontrol-position: top right;
                 width: 30px;
-                border-left-width: 1px;
-                border-left-color: #4CAF50;
-                border-left-style: solid;
-                border-top-right-radius: 5px;
-                border-bottom-right-radius: 5px;
+                border-left: 1px solid #4CAF50;
+                border-top-right-radius: 4px;
+                border-bottom-right-radius: 4px;
             }
             QComboBox::down-arrow {
-                image: url(arrow_icon.png);
-                color: red;
-                width: 14px;
-                height: 14px;
+                image: url(ui/arrow_icon.png);
+                width: 16px;
+                height: 16px;
             }
         """)
         language_layout.addWidget(language_label)
