@@ -71,11 +71,11 @@ class PlantDiseaseDetectorApp(QMainWindow):
 
         # Image drop/upload area
         image_group = QGroupBox()
-        image_group.setStyleSheet("QGroupBox { border: 2px dashed #43a047; border-radius: 12px; margin-top: 8px; background: #fff; min-height: 600px; } ")
+        image_group.setStyleSheet("QGroupBox { border: 2px dashed #43a047; border-radius: 12px; margin-top: 8px; background: #fff; min-height: 580px; } ")
         image_group.setTitle("")
         image_group_layout = QVBoxLayout()
         image_group_layout.setContentsMargins(20, 20, 20, 20)
-        self.image_display = QLabel("Drag and drop an image here\n or click to select", self)
+        self.image_display = QLabel("Drag and drop an image here\n or click to select\n फोटो अपलोड करा", self)
         self.image_display.setAlignment(Qt.AlignCenter)
         self.image_display.setAcceptDrops(True)
         self.image_display.setStyleSheet("QLabel { color: #444; font-size: 18px; font-weight: bold; padding: 20px; border: none; min-width: 400px; min-height: 320px; }")        
@@ -85,14 +85,14 @@ class PlantDiseaseDetectorApp(QMainWindow):
 
         # Buttons
         button_layout = QHBoxLayout()
-        self.upload_btn = QPushButton(" Upload Image")
+        self.upload_btn = QPushButton(" Upload Image\n फोटो अपलोड करा ")
         self.upload_btn.setIcon(QIcon.fromTheme("folder"))
-        self.upload_btn.setStyleSheet("QPushButton { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-size: 15px; min-width: 180px; } QPushButton:hover { background-color: #388e3c; }")
+        self.upload_btn.setStyleSheet("QPushButton { background-color: #4CAF50; color: white; border: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 15px; min-width: 180px; } QPushButton:hover { background-color: #388e3c; }")
         self.upload_btn.clicked.connect(self.upload_image)
         button_layout.addWidget(self.upload_btn)
-        self.detect_btn = QPushButton("Detect Disease")
+        self.detect_btn = QPushButton("Detect Disease\n रोग शोधा")
         self.detect_btn.setEnabled(False)
-        self.detect_btn.setStyleSheet("QPushButton { background-color: #f5f5f5; color: #bdbdbd; border: 1px solid #ccc; padding: 10px 20px; border-radius: 5px; font-size: 15px; min-width: 180px; }")       
+        self.detect_btn.setStyleSheet("QPushButton { background-color: #f5f5f5; color: #bdbdbd; border: 1px solid #ccc; padding: 10px 20px; border-radius: 5px; font-weight: bold; font-size: 15px; min-width: 180px; }")       
         self.detect_btn.clicked.connect(self.detect_disease)
         button_layout.addWidget(self.detect_btn)
         left_panel.addLayout(button_layout)
@@ -138,24 +138,29 @@ class PlantDiseaseDetectorApp(QMainWindow):
         # Right panel (Detection Results)
         right_panel = QVBoxLayout()
         content_layout.addLayout(right_panel, 3)
+        
+        # Create a container frame with green border
+        results_container = QFrame()
+        results_container.setFrameShape(QFrame.StyledPanel)
+        results_container.setStyleSheet("QFrame { border: 2px solid #4CAF50; border-radius: 8px; padding: 8px; background: #fff; }")
+        results_container_layout = QVBoxLayout(results_container)
+        results_container_layout.setContentsMargins(0, 0, 0, 0)
+        results_container_layout.setSpacing(0)
+        
         # Detection Results header
         results_header = QLabel("Detection Results")
         results_header.setFont(QFont("Arial", 13, QFont.Bold))
         results_header.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
-        results_header_frame = QFrame()
-        results_header_frame.setFrameShape(QFrame.Box)
-        results_header_frame.setLineWidth(2)
-        results_header_frame.setStyleSheet("QFrame { background: #f0f0f0; padding: 10px; border-radius: 0px; }")
-        results_header_layout = QVBoxLayout()
-        results_header_layout.setContentsMargins(12, 2, 12, 2)
-        results_header_layout.addWidget(results_header)
-        results_header_frame.setLayout(results_header_layout)
-        right_panel.addWidget(results_header_frame)
+        results_header.setStyleSheet("background: #4CAF50; color: white; padding: 10px; border-top-left-radius: 4px; border-top-right-radius: 4px;")
+        results_container_layout.addWidget(results_header)
+        
         # Results display area
         self.result_text = QTextEdit()
         self.result_text.setReadOnly(True)
-        self.result_text.setStyleSheet("QTextEdit { border: 1px solid #bdbdbd; border-radius: 8px; background: #fff; font-size: 15px; font-weight: bold; min-height: 620px; margin-top: 8px; }")
-        right_panel.addWidget(self.result_text)
+        # self.result_text.setContextMenuPolicy(Qt.NoContextMenu)
+        self.result_text.setStyleSheet("QTextEdit { border: none; border-top: none; border-top-left-radius: 0; border-top-right-radius: 0; background: #fff; font-size: 18px; font-weight: bold; min-height: 600px; }")
+        results_container_layout.addWidget(self.result_text)
+        right_panel.addWidget(results_container)
         right_panel.addStretch(1)
 
     def upload_image(self):
