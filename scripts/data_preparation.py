@@ -44,7 +44,7 @@ def main():
     args = parser.parse_args()
 
     # Set up data directories
-    base_dir = 'data/raw'
+    base_dir = os.path.join('data/raw', 'New Plant Diseases Dataset(Augmented)')
     train_dir = os.path.join(base_dir, 'train')
     valid_dir = os.path.join(base_dir, 'valid')
 

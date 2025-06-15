@@ -219,10 +219,10 @@ class PlantDiseaseDetectorApp(QMainWindow):
                 symptoms = '\n         - '.join(disease_details.get('symptoms', []))
                 causes = '\n         - '.join(disease_details.get('causes', []))
                 treatments = '\n         - '.join(disease_details.get('treatments', []))
-                result += f"   Description: {description}\n"
-                result += f"   Symptoms:\n      - {symptoms}\n"
-                result += f"   Causes:\n      - {causes}\n"
-                result += f"   Treatments:\n      - {treatments}\n\n"
+                result += f"   Description ( वर्णन ): {description}\n"
+                result += f"   Symptoms ( लक्षण ):\n      - {symptoms}\n"
+                result += f"   Causes ( कारणे ):\n      - {causes}\n"
+                result += f"   Treatments ( उपाय ):\n      - {treatments}\n\n"
             else:
                 result += f"   [No detailed info available]\n\n"
             self.result_text.setText(result)
