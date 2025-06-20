@@ -80,7 +80,7 @@ def evaluate_model(model, test_loader, device, class_names):
 
 if __name__ == "__main__":
     # Load the best model
-    TEST_DATA_DIR = 'data/processed/valid'
+    TEST_DATA_DIR = 'data/processed/Preprocessed Plant Diseases Dataset/valid'
     test_dataset = datasets.ImageFolder(TEST_DATA_DIR, transform=transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize([0.485, 0.456, 0.406], [0.229, 0.224, 0.225]),
