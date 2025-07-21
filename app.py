@@ -5,6 +5,7 @@ import torch.nn.functional as F
 from models.model import get_model
 from disease_info.disease_info_com import DISEASE_INFO
 import os
+import urllib.request
 from urllib.parse import parse_qs
 
 # --- Accessible, high-contrast CSS for result and info boxes and horizontal scroll gallery ---
@@ -159,6 +160,18 @@ def get_language_code(lang):
 
 lang = st.selectbox("Select Language / भाषा निवडा", ["English", "Hindi", "Marathi"])
 language_code = get_language_code(lang)
+
+# Download model from Google Drive if not present
+model_path = 'models/checkpoints/best_model.pth'
+gdrive_file_id = '1AK7QJkTl0i4HqpaKBNoL1FHDj1cICnng'
+model_url = f'https://drive.google.com/uc?export=download&id={gdrive_file_id}'
+
+if not os.path.exists(model_path):
+    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    import streamlit as st
+    st.info('Downloading model file from Google Drive. This may take a while...')
+    urllib.request.urlretrieve(model_url, model_path)
+    st.success('Model download complete!')
 
 model = load_model()
 class_names = [DISEASE_INFO[i][language_code]['name'] if isinstance(DISEASE_INFO[i], dict) and language_code in DISEASE_INFO[i] and 'name' in DISEASE_INFO[i][language_code] else DISEASE_INFO[i].get('name', f'Class {i}') for i in range(len(DISEASE_INFO))]
