@@ -1,16 +1,14 @@
+streamlit
 torch
 torchvision
-tqdm
-matplotlib==3.7.1
-pandas
-numpy
-scikit-learn==1.2.2
-Pillow
-seaborn==0.12.2
-jupyter
-wandb==0.15.3
 timm
+Pillow
+numpy
+pandas
+scikit-learn
+matplotlib
+seaborn
+tqdm
 opencv-python
 albumentations
-PyQt5
-pyqt5-tools
+# wandb  # Uncomment if you use Weights & Biases logging in your Streamlit app
