@@ -11,4 +11,5 @@ seaborn
 tqdm
 opencv-python
 albumentations
+gdown
 # wandb  # Uncomment if you use Weights & Biases logging in your Streamlit app

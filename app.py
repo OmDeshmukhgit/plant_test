@@ -164,13 +164,13 @@ language_code = get_language_code(lang)
 # Download model from Google Drive if not present
 model_path = 'models/checkpoints/best_model.pth'
 gdrive_file_id = '1AK7QJkTl0i4HqpaKBNoL1FHDj1cICnng'
-model_url = f'https://drive.google.com/uc?export=download&id={gdrive_file_id}'
 
 if not os.path.exists(model_path):
     os.makedirs(os.path.dirname(model_path), exist_ok=True)
-    import streamlit as st
     st.info('Downloading model file from Google Drive. This may take a while...')
-    urllib.request.urlretrieve(model_url, model_path)
+    import gdown
+    url = f'https://drive.google.com/uc?id={gdrive_file_id}'
+    gdown.download(url, model_path, quiet=False)
     st.success('Model download complete!')
 
 model = load_model()
