@@ -172,6 +172,7 @@ if not os.path.exists(model_path):
     url = f'https://drive.google.com/uc?id={gdrive_file_id}'
     gdown.download(url, model_path, quiet=False)
     st.success('Model download complete!')
+    st.write(f"Model file size after download: {os.path.getsize(model_path) / 1024 / 1024:.2f} MB")
 
 model = load_model()
 class_names = [DISEASE_INFO[i][language_code]['name'] if isinstance(DISEASE_INFO[i], dict) and language_code in DISEASE_INFO[i] and 'name' in DISEASE_INFO[i][language_code] else DISEASE_INFO[i].get('name', f'Class {i}') for i in range(len(DISEASE_INFO))]
